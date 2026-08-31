@@ -1,8 +1,10 @@
-base_price = 15
-age = 21
-seat_type = 'Gold'
-show_time = 'Evening'
+base_price = float(input("Enter the base ticket price: ₹"))
+age = int(input("Enter your age: "))
+seat_type = input("Enter seat type (Regular/Gold/Premium): ").strip().title()
+show_time = input("Enter show time (Morning/Afternoon/Evening): ").strip().title()
 
+is_member = input("Are you a member? (yes/no): ").strip().lower() == "yes"
+is_weekend = input("Is it a weekend? (yes/no): ").strip().lower() == "yes"
 if age > 17:
     print('User is eligible to book a ticket')
 
